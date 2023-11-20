@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>Swiper Carousel</title>
+  <style>
+    /* Custom styles for Swiper container */
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px; /* Adjust as needed */
+      padding-bottom: 50px; /* Adjust as needed */
+    }
+
+    /* Custom styles for Swiper slide */
+    .swiper-slide {
+      width: 50%; /* Show two items per slide */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="../Image/du-thuyen-capella-capella-1615795893.jpg" alt="Slide 1">
+    </div>
+    <div class="swiper-slide">
+      <img src="../Image/du-thuyen-capella-capella-1615795893.jpg" alt="Slide 2">
+    </div>
+    <!-- Add more swiper-slide elements as needed -->
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Navigation -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2, // Display two slides per view
+    spaceBetween: 20, // Adjust spacing between slides as needed
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+</body>
+</html>
